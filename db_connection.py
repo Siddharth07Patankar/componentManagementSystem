@@ -6,7 +6,6 @@ class db_connection_manage():
         self.MONGO_DB_NAME = 'cms'
         self.MONGO_HOST = 'localhost'
         self.MONGO_PORT = 27017
-        # self.client = MongoClient(self.MONGO_HOST, self.MONGO_PORT)
  
     def get_conn(self,env_type):
         client = MongoClient(self.MONGO_HOST, self.MONGO_PORT)
