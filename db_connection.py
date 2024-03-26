@@ -4,8 +4,9 @@ from pymongo import MongoClient
 class db_connection_manage():
     def __init__(self):
         self.MONGO_DB_NAME = 'cms'
-        self.MONGO_HOST = '172.11.5.181'
-        self.MONGO_PORT = 27017       # self.client = MongoClient(self.MONGO_HOST, self.MONGO_PORT)
+        self.MONGO_HOST = 'localhost'
+        self.MONGO_PORT = 27017
+        # self.client = MongoClient(self.MONGO_HOST, self.MONGO_PORT)
  
     def get_conn(self,env_type):
         client = MongoClient(self.MONGO_HOST, self.MONGO_PORT)
